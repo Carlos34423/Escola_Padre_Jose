@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Baloo Chettan 2", serif;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Baloo Chettan 2", serif;
+}
+header{
+    position: absolute;
+    width: 100%;
+}
+
+.logonav{
+    height:13vh;
+    flex-shrink: 0;
+}
+
+.nav-link {
+    color: #FFF; 
+    text-decoration: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.nav-link:hover {
+    color: #42DCFF;
+    text-decoration: underline;
+}
+.nav-link:focus {
+    color: #42DCFF;
+    text-decoration: underline;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler{
+    border-width: 2px;
+    border-color: white;
+}
+
+.content-header {
+    padding-top: 120px; /* Ajuste essa altura conforme a altura da sua navbar */
+}
+
+/* Banner Principal */
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image:url('../assets/banner-home.png');
+    background-repeat: no-repeat;   
+    background-size: cover;
+    background-position: left center;
+}
+
+.hero {
+    padding-left: 6vw;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    
+}
+
+.hero-conteudo{
+    flex-direction: column;
+    display: flex;
+    gap: 1.5rem;
+    
+}
+
+.hero-conteudo h1{
+    line-height: 100%;
+    color: #FFF;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 800;
+    
+}
+
+.hero-conteudo h1 span{
+    color: #CCEBFF;
+    
+}
+
+.hero-conteudo p{
+    color: #FFF;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.iconBtn{
+    width: 15px;
+    height: 15px;
+}
+
+.btnInstagram{
+
+    width: 10.5rem;
+    height: 3.5rem;
+    border-radius: 3rem;
+    border: 2px solid #CCEBFF;
+    background-color: rgba(0, 0, 0, 0);
+    background: #040315;
+    /* border: none; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+    justify-content: center;
+
+    
+    font-family: "Baloo Chettan 2";
+    color: white;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+
+    transition: background-color 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.btnFacebook{
+    
+    width: 10.5rem;
+    height: 3.5rem;
+    border-radius: 3rem;
+    border: 2px solid #CCEBFF;
+    background-color: rgba(0, 0, 0, 0);
+    background: #040315;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 20px;
+
+    color: #FFF;
+    font-family: "Baloo Chettan 2";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+
+    transition: background-color 1s ease-in-out, transform 1s ease-in-out;
+
+}
+
+.btnInstagram:hover{
+    background: linear-gradient(84deg, #040315 15.78%, #113A78 99.08%);
+}
+
+.btnFacebook:hover{
+    background: linear-gradient(84deg, #040315 15.78%, #113A78 99.08%);
+    /* border: none; */
+}
+
+.dobra-3{
+    background-image: url(../assets/mini-banner.png);
+    width: 100vw;
+    height: 740px;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    justify-content: end;
+    align-items: center;
+    margin: 0;
+}
+
+.mini-banner h2{
+    padding-right: 8vw;
+    color: #FFF;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 140%;
+    
+}
+
+.dobra-4{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.dobra-4 h2{
+    color: #040315;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 140%;
+}
+
+.dobra-4 span{
+    color: #138FB4;
+}
+
+.dobra p{
+    color: #3C3C3C;
+}
+
+.btn-standard{
+    cursor: pointer;
+    font-family: "Baloo Chettan 2";
+    border-radius: 3rem;
+    background-color: #CCEBFF;
+    font-family: "Baloo Chettan 2";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 40%;
+    margin-top: 1rem;
+}
+
+h2{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+section, .map-section{
+    margin-top: 5rem; 
+}
+
+.dobra-2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.head-instagram{
+    background-color: #138FB4;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    width: 18rem;
+}
+
+.container-insta row, .container-insta .row .col-3, .container-insta .row .col-12{
+    gap: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#instagram-principal{
+    visibility: visible;
+}
+
+button{
+    border: none;
+}
+
+.contact .btn-standard{
+    width: 50%;
+}
+
+footer{
+    background-color: #ECF6FF;
+}
+
+.instagram{
+    width: 100%;
+}
+
+.mockup-phone{
+    padding-left: 10vw;
+}
+
+.banner-mini-contato {
+    width: 100%;
+    height: 50vh;
+    background-image:url('../assets/B4.png');
+    background-repeat: no-repeat;   
+    background-size: cover;
+    background-position: left center;
+}
+
+.icon-box {
+    min-width: 3.125rem;
+    width: 3.125rem; 
+    height: 3.125rem;
+    background-color: #138FB4; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; 
+    margin-right: 0.625rem;
+}
+
+.icon-box i {
+    color: white; 
+    font-size: 1.5rem; 
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.icon-blue { background-color: #113A78; }  
+.icon-red { background-color: #138FB4; }   
+.icon-purple { background-color: #F900BA; }
+
+
+ .form-container {
+    background: white;
+    border: 2px solid #138FB4;
+    border-radius: 15px;
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+
+.form-control {
+    background: #ECF6FF !important;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+
+}
+
+.form-control:focus {
+    border: 2px solid #138FB4;
+    outline: none;
+    box-shadow: none;
+}
+
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.input-group .form-control {
+    flex: 1;
+}
+
+span{
+    color: #138FB4;
+}
+
+.btnForms {
+    background: #138FB4;
+    font-weight: 900;
+    color: #FFF;
+}
+
+
+.btnForms:hover {
+    background: #040315;
+    color: #FFF;
+    font-weight: 900;
+}
+
+#mapa-contato{
+    width: 100%;
+    height: 50vh;
+}
+
+.footer {
+    background-color: #ECF6FF;;
+    padding: 20px 0;
+}
+
+.footer a{
+    color: #3C3C3C;
+    font-weight: 400;
+}
+.footer i{
+    color: #138FB4;
+    font-size: 0.85rem;
+    padding-left: 3px;
+    padding-right: 5px;
+}
+.footer .logo-and-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+}
+.footer .logo {
+    margin-right: 2rem;
+    height: 10rem;
+    width: 10rem;
+}
+.footer .divider {
+    border-top: 1px solid #138FB4;
+    margin: 20px 0;
+}
+
+.text-center p{
+    color: #626262;
+    margin-bottom: 0;
+}
+
+.destaque{
+    color:#138fb4;
+}
+
+#banner-galeria{
+    background-image: url('../assets/banner-galeria.png');
+}
+
+#banner-projeto{
+    background-image: url('../assets/B1.jpg');
+}
+
+.gallery-item {
+    position: relative;
+    width: 100%;
+    padding-top: 75%; /* Define uma proporção fixa 4:3 */
+    overflow: hidden;
+}
+.gallery-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém o aspecto preenchendo o espaço */
+}
+
+.banner-mini-quemsomos {
+    width: 100%;
+    height: 50vh;
+    background-image:url('../assets/B2.png');
+    background-repeat: no-repeat;   
+    background-size: cover;
+    background-position: left center;
+}
+
+.bg-dobra2{
+    width: 100%;
+    height: 900px;
+    background: #ECF6FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin: 150px 0px;
+    
+}
+
+.dbSpace {
+    margin-bottom: 150px;
+}
+
+.info-topic {
+    margin-top: 10px;
+}
+
+.dobra-meio{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.custom-card {
+    width: 400px;
+    height: 455px;
+    background-color: #040315;
+    color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    gap: 20px;
+}
+
+.titleCard {
+    font-size: 20px;
+    font-weight: 900;
+    color: #42DCFF;
+}
+
+.card {
+    width: 30%;
+    padding: 2.8rem 2rem;
+    border-radius: 10px;
+    border: 1px solid #138FB4;
+    background: #FFF;
+    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+    align-items: center;
+}
+
+.card button{
+    color: white;
+    border-radius: 46px;
+    background: var(--DEGRADE-AZUL, linear-gradient(60deg, #138FB4 25.94%, #42DCFF 63.14%));
+    font-weight: 700;
+    padding: 1rem 2rem;
+    width: 65%;
+}
+
+.card p{
+    margin-bottom: 2rem;
+}
+
+.card h3{
+    margin-bottom: 1.5rem;
+}
+
+#projects-section{
+    max-width: 85vw;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+
+@media (max-width: 992px) {
+    .navbar-brand{
+        margin: 0;
+    }
+
+    html{
+        font-size: 12px;
+    }    
+
+    h2{
+        font-size: 20px;
+    }
+
+    .banner {
+        background-position: center;
+        background-image:url('../assets/BANNER-MOBILE.png');
+    }
+
+    .banner-mini-contato{
+        background-image: url('../assets/B4-M.png');
+    }
+
+    .banner-mini-quemsomos{
+        background-image: url('../assets/B2-M.png');
+    }
+
+    #banner-projeto{
+        background-image: url('../assets/B1-M.png');
+    }
+
+    .hero-conteudo h1{
+        font-size: 4rem;
+    }
+
+    .contact .btn-standard{
+        font-size: 1rem;
+        width: 40%;
+    }
+
+    .btn-standard{
+        font-size: 1rem;
+        width: 40%;
+        padding: 0.7rem 0rem;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .nav-link{
+        color: #040315;
+    }
+    
+    #btn-conheca-2{
+        visibility: hidden;
+    }
+
+    .logonav{
+        height: 10vh;
+    }
+
+    p,h2,.btn-standard{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .dobra-3 h2{
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .container-insta .row .col-3{
+        visibility: hidden;
+    }
+    .disabled-img{
+        height: 0px;
+    }
+
+    .mobile-hide{
+        visibility: hidden;
+        height: 0;
+    }
+
+    .hero{
+        padding-left:0 ;
+    }
+
+    #hero-conteudo-index{
+        padding-bottom: 25vh;  text-align: center; align-items: center;
+    }
+
+    section, .map-section{
+        margin-top: 4rem;
+    }
+
+    .icon-box i{
+        font-size: 1.2rem;
+    }
+
+    .social-icons{
+        gap: 0;
+    }
+
+    .footer .row > div {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer .logo {
+        height: 7rem;
+        width: 7rem;
+        margin-left: 2rem;
+    }
+
+    .bg-dobra2{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: auto;
+        padding-top: 0;
+    }
+
+    .dobra-3{
+        padding-top: 50%;
+        background-image: url('/assets/mini.png');
+        background-position: center right;
+    }
+
+    .custom-card{
+        height: auto;
+    }
+
+    .dbSpace{
+        margin-bottom: 0;
+    }
+
+    .card{
+        width: unset;
+    }
+
+    .card button{
+        width: 85%;
+    }
+}
+
+@media (min-width: 992px) { 
+    .w-lg-50 { 
+        width: 60% !important; 
+    }
+    .dobra-3{
+        padding: 0;
+    }
+}
+  
+@media (max-width: 1600px) {
+    .dobra-3 {
+        height: 75vh;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero-conteudo h1 {
+        font-size: 3.5rem;
+    }
+}
+.estagiario{
+    color: rgb(77, 77, 77);
+    font-size: 15px;
+    font-weight: bold;
+
+}
